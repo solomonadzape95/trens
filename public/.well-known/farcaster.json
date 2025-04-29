@@ -1,0 +1,17 @@
+{
+  "accountAssociation": {
+    "header": "<base64>",
+    "payload": "<base64>",
+    "signature": "<base64>"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Trending Coins",
+    "iconUrl": "https://yourdomain.com/icon.png",
+    "homeUrl": "https://yourdomain.com",
+    "imageUrl": "https://yourdomain.com/preview.png",
+    "buttonTitle": "🚀 View Top Coins",
+    "splashImageUrl": "https://yourdomain.com/icon.png",
+    "splashBackgroundColor": "#000000"
+  }
+}
