@@ -1,4 +1,9 @@
 {
+ "accountAssociation": {
+    "header": "eyJmaWQiOjgxNzc4NCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweGVDMzNlNDA2YTY2MjM3ZTk4YTUzNGMzOUI0NzYzMUU2OTY5QzJEQWIifQ",
+    "payload": "eyJkb21haW4iOiJ0cmVucy52ZXJjZWwuYXBwIn0",
+    "signature": "MHhkYmJlMDEyZWIxNjc1MDE1YjEyMTg1Y2MwYjIxODRjMmU4YWRmN2E0ZWE5ZWQ5MjBjNTllNzE0ZDdjMDhkMWQ4NDk0OGYzYWEwN2EwOTk0OTNjMmM3NmI2YWMzNDczNDVmYTJkZjcxNzJhNDY4MmZmZGQzZmQwMDFhYWQyMjEwYTFj"
+  },
   "frame": {
     "version": "1",
     "name": "Trens",
