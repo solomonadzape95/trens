@@ -5,30 +5,34 @@ import { sdk } from "@farcaster/frame-sdk";
 import { fetchTrendingCoins } from "../lib/zora";
 
 export default function Home() {
-  const [coins, setCoins] = useState<Array<{
-    id: string;
-    name: string;
-    description: string;
-    address: string;
-    symbol: string;
-    totalSupply: string;
-    totalVolume: string;
-    volume24h: string;
-    createdAt?: string;
-    creatorAddress?: string;
-    marketCap: string;
-    marketCapDelta24h: number;
-    uniqueHolders: number;
-  }>>([]);
+  const [coins, setCoins] = useState<
+    Array<{
+      id: string;
+      name: string;
+      description: string;
+      address: string;
+      symbol: string;
+      totalSupply: string;
+      totalVolume: string;
+      volume24h: string;
+      createdAt?: string;
+      creatorAddress?: string;
+      marketCap: string;
+      marketCapDelta24h: number;
+      uniqueHolders: number;
+    }>
+  >([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     sdk.actions.ready(); // Dismiss splash screen
     fetchTrendingCoins().then((data) => {
-      setCoins(data.map(coin => ({
-        ...coin,
-        marketCapDelta24h: Number(coin.marketCapDelta24h)
-      })));
+      setCoins(
+        data.map((coin) => ({
+          ...coin,
+          marketCapDelta24h: Number(coin.marketCapDelta24h),
+        }))
+      );
       setLoading(false);
     });
   }, []);
@@ -60,7 +64,7 @@ export default function Home() {
         <h1>📈 Trending Zora Coins</h1>
         <ul>
           {coins.map((coin, idx) => (
-            <li key={coin.address} style={{ marginBottom: 12 }}>
+            <li key={coin.address + idx} style={{ marginBottom: 12 }}>
               <strong>
                 {coin.name} ({coin.symbol})
               </strong>
