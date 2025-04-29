@@ -1,9 +1,4 @@
 {
-  "accountAssociation": {
-    "header": "<base64>",
-    "payload": "<base64>",
-    "signature": "<base64>"
-  },
   "frame": {
     "version": "1",
     "name": "Trens",
