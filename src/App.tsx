@@ -10,6 +10,26 @@ function App() {
 
   return (
     <>
+      <head>
+        {" "}
+        <meta
+          name="fc:frame"
+          content='{
+          "version":"next",
+          "imageUrl":"https://trens.vercel.app/zora.png",
+          "button": {
+            "title": "🚀 View Top Coins",
+            "action": {
+              "type": "launch_frame",
+              "url": "https://trens.vercel.app",
+              "name": "Trending Coins",
+              "splashImageUrl": "https://trens.vercel.app/emoji.png",
+              "splashBackgroundColor": "#000000"
+            }
+          }
+        }'
+        />
+      </head>
       <Home />
     </>
   );
