@@ -3,7 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Mini App</title>
+     <meta
+          name="fc:frame"
+          content='{
+          "version":"next",
+          "imageUrl":"https://trens.vercel.app/zora.png",
+          "button": {
+            "title": "🚀 View Top Coins",
+            "action": {
+              "type": "launch_frame",
+              "url": "https://trens.vercel.app",
+              "name": "Trending Coins",
+              "splashImageUrl": "https://trens.vercel.app/emoji.png",
+              "splashBackgroundColor": "#000000"
+            }
+          }
+        }'
+        />
+    <title>Trens</title>
   </head>
   <body>
     <div id="root"></div>
